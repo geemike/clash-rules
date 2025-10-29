@@ -1,27 +1,53 @@
 payload:
   # ===== 广告投放平台 =====
+  # Google 广告生态
   - DOMAIN-SUFFIX,google.com
   - DOMAIN-SUFFIX,googleads.g.doubleclick.net
   - DOMAIN-SUFFIX,googlesyndication.com
   - DOMAIN-SUFFIX,googleadservices.com
+  - DOMAIN-SUFFIX,googletagmanager.com
+  - DOMAIN-SUFFIX,google-analytics.com
   - DOMAIN-KEYWORD,googleads
   - DOMAIN-KEYWORD,doubleclick
+  - DOMAIN-KEYWORD,analytics
+  
+  # Meta 广告平台 (Facebook/Instagram)
   - DOMAIN-SUFFIX,facebook.com
+  - DOMAIN-SUFFIX,facebook.net
   - DOMAIN-KEYWORD,fbcdn
   - DOMAIN-KEYWORD,facebookads
   - DOMAIN-SUFFIX,instagram.com
   - DOMAIN-KEYWORD,instagramads
+  - DOMAIN-SUFFIX,business.facebook.com
+  - DOMAIN-KEYWORD,facebook-pixel
+  
+  # TikTok 广告平台
   - DOMAIN-SUFFIX,tiktok.com
   - DOMAIN-SUFFIX,tiktokcdn.com
+  - DOMAIN-SUFFIX,tiktok-eu.com
+  - DOMAIN-SUFFIX,musical.ly
   - DOMAIN-KEYWORD,tiktokads
   - DOMAIN-KEYWORD,tiktokv
+  - DOMAIN-SUFFIX,ads.tiktok.com
+  - DOMAIN-KEYWORD,byteoversea
+  
+  # Bing / Microsoft 广告
   - DOMAIN-SUFFIX,bing.com
+  - DOMAIN-SUFFIX,ads.microsoft.com
   - DOMAIN-KEYWORD,bingads
+  - DOMAIN-KEYWORD,microsoftads
+  
+  # Pinterest 广告
+  - DOMAIN-SUFFIX,pinterest.com
+  - DOMAIN-SUFFIX,pinimg.com
+  - DOMAIN-KEYWORD,pinterestads
+  - DOMAIN-SUFFIX,ads.pinterest.com
+  
+  # 其他广告平台
   - DOMAIN-SUFFIX,ads.linkedin.com
   - DOMAIN-KEYWORD,linkedinads
-  - DOMAIN-SUFFIX,pinterest.com
-  - DOMAIN-KEYWORD,pinterestads
   - DOMAIN-SUFFIX,ads-twitter.com
+  - DOMAIN-SUFFIX,x.com
   - DOMAIN-KEYWORD,twitterads
   - DOMAIN-SUFFIX,snapchat.com
   - DOMAIN-KEYWORD,snapads
@@ -32,9 +58,14 @@ payload:
   - DOMAIN-KEYWORD,outbrain
   - DOMAIN-SUFFIX,mgid.com
   - DOMAIN-SUFFIX,revcontent.com
+  
+  # 追踪和像素
   - DOMAIN-KEYWORD,pixel
   - DOMAIN-KEYWORD,track
   - DOMAIN-KEYWORD,tracking
+  - DOMAIN-KEYWORD,analytics
+  - DOMAIN-SUFFIX,hotjar.com
+  - DOMAIN-SUFFIX,clarity.ms
 
   # ===== 收款平台 =====
   - DOMAIN-SUFFIX,paypal.com
@@ -56,21 +87,71 @@ payload:
   - DOMAIN-KEYWORD,lianlianpay
   - DOMAIN-SUFFIX,shopifypayments.com
 
+  # ===== 采购 & 供应链平台 =====
+  # 中国采购平台
+  - DOMAIN-SUFFIX,1688.com
+  - DOMAIN-KEYWORD,1688
+  - DOMAIN-SUFFIX,alibaba.com
+  - DOMAIN-KEYWORD,alibaba
+  - DOMAIN-SUFFIX,taobao.com
+  - DOMAIN-KEYWORD,taobao
+  - DOMAIN-SUFFIX,tmall.com
+  - DOMAIN-KEYWORD,tmall
+  - DOMAIN-SUFFIX,alicdn.com
+  - DOMAIN-KEYWORD,alicdn
+  
+  # 国际采购平台
+  - DOMAIN-SUFFIX,aliexpress.com
+  - DOMAIN-KEYWORD,aliexpress
+  - DOMAIN-SUFFIX,dhgate.com
+  - DOMAIN-SUFFIX,globalsources.com
+  - DOMAIN-SUFFIX,made-in-china.com
+  
+  # 品牌供应链
+  - DOMAIN-SUFFIX,faire.com
+  - DOMAIN-SUFFIX,printful.com
+  - DOMAIN-SUFFIX,printify.com
+  - DOMAIN-SUFFIX,cjdropshipping.com
+  - DOMAIN-SUFFIX,spocket.com
+
   # ===== 店铺后台 / 电商平台 =====
+  # Shopify 生态
   - DOMAIN-KEYWORD,shopify
   - DOMAIN-SUFFIX,myshopify.com
+  - DOMAIN-SUFFIX,shopify.com
+  - DOMAIN-SUFFIX,shopifycdn.com
+  - DOMAIN-SUFFIX,shopifyapps.com
+  - DOMAIN-KEYWORD,shopify
+  
+  # 其他建站平台
   - DOMAIN-SUFFIX,shoplineapp.com
   - DOMAIN-SUFFIX,bigcommerce.com
+  - DOMAIN-SUFFIX,wix.com
+  - DOMAIN-SUFFIX,squarespace.com
+  - DOMAIN-SUFFIX,woocommerce.com
+  - DOMAIN-SUFFIX,magento.com
+  
+  # 电商平台
   - DOMAIN-SUFFIX,amazon.com
+  - DOMAIN-SUFFIX,amazon.co.uk
+  - DOMAIN-SUFFIX,amazon.de
+  - DOMAIN-SUFFIX,amazon.fr
+  - DOMAIN-SUFFIX,amazon.ca
   - DOMAIN-KEYWORD,sellercentral
   - DOMAIN-SUFFIX,sellercentral.amazon.com
   - DOMAIN-SUFFIX,ebay.com
+  - DOMAIN-SUFFIX,ebay.co.uk
   - DOMAIN-SUFFIX,etsy.com
   - DOMAIN-SUFFIX,walmart.com
+  - DOMAIN-SUFFIX,walmart.ca
+  
+  # 亚洲电商平台
   - DOMAIN-SUFFIX,shopee.com
+  - DOMAIN-SUFFIX,shopee.sg
   - DOMAIN-SUFFIX,lazada.com
-  - DOMAIN-SUFFIX,aliexpress.com
-  - DOMAIN-KEYWORD,aliexpress
+  - DOMAIN-SUFFIX,lazada.sg
+  
+  # 新兴平台
   - DOMAIN-SUFFIX,temu.com
   - DOMAIN-KEYWORD,temu
   - DOMAIN-SUFFIX,temuapi.com
@@ -79,6 +160,8 @@ payload:
   - DOMAIN-SUFFIX,temuimg.com
   - DOMAIN-SUFFIX,temucdn.com
   - DOMAIN-SUFFIX,pay.temu.com
+  - DOMAIN-SUFFIX,shein.com
+  - DOMAIN-KEYWORD,shein
   
   # ===== 社交 & 内容平台 =====
   - DOMAIN-SUFFIX,youtube.com
@@ -90,29 +173,120 @@ payload:
   - DOMAIN-KEYWORD,telegram
   - DOMAIN-SUFFIX,medium.com
 
-  # ===== 数据 & 工具类 =====
+  # ===== 数据分析 & SEO工具 =====
+  # 竞品分析工具
   - DOMAIN-SUFFIX,ahrefs.com
   - DOMAIN-SUFFIX,semrush.com
   - DOMAIN-SUFFIX,similarweb.com
+  - DOMAIN-SUFFIX,spyfu.com
+  - DOMAIN-SUFFIX,moz.com
+  
+  # 数据分析平台
+  - DOMAIN-SUFFIX,google-analytics.com
+  - DOMAIN-SUFFIX,analytics.google.com
+  - DOMAIN-KEYWORD,google-analytics
+  - DOMAIN-SUFFIX,hotjar.com
+  - DOMAIN-KEYWORD,hotjar
+  - DOMAIN-SUFFIX,clarity.ms
+  - DOMAIN-SUFFIX,mixpanel.com
+  - DOMAIN-SUFFIX,amplitude.com
+  
+  # 电商数据工具
+  - DOMAIN-SUFFIX,junglescout.com
+  - DOMAIN-SUFFIX,helium10.com
+  - DOMAIN-SUFFIX,sellercounter.com
+  - DOMAIN-KEYWORD,sellercounter
+  - DOMAIN-SUFFIX,commerce-inspector.com
+  - DOMAIN-SUFFIX,koala-apps.com
+  
+  # 设计 & 创意工具
   - DOMAIN-SUFFIX,canva.com
+  - DOMAIN-KEYWORD,canva
   - DOMAIN-SUFFIX,figma.com
   - DOMAIN-SUFFIX,envato.com
+  - DOMAIN-SUFFIX,shutterstock.com
+  - DOMAIN-SUFFIX,pexels.com
+  - DOMAIN-SUFFIX,unsplash.com
+  - DOMAIN-SUFFIX,capcut.com
+  - DOMAIN-KEYWORD,capcut
+  
+  # AI 工具
   - DOMAIN-SUFFIX,openai.com
   - DOMAIN-KEYWORD,openai
   - DOMAIN-SUFFIX,anthropic.com
+  - DOMAIN-SUFFIX,claude.ai
   - DOMAIN-SUFFIX,midjourney.com
-  - DOMAIN-SUFFIX,klaviyo.com
-  - DOMAIN-SUFFIX,mailchimp.com
-  - DOMAIN-SUFFIX,omnisend.com
   - DOMAIN-SUFFIX,chat.openai.com
   - DOMAIN-KEYWORD,chatgpt
+  - DOMAIN-SUFFIX,gemini.google.com
+  
+  # 邮件营销工具
+  - DOMAIN-SUFFIX,klaviyo.com
+  - DOMAIN-KEYWORD,klaviyo
+  - DOMAIN-SUFFIX,mailchimp.com
+  - DOMAIN-KEYWORD,mailchimp
+  - DOMAIN-SUFFIX,omnisend.com
+  - DOMAIN-SUFFIX,sendgrid.com
+  - DOMAIN-SUFFIX,mailgun.com
+  - DOMAIN-SUFFIX,convertkit.com
+  
+  # 自动化 & 效率工具
+  - DOMAIN-SUFFIX,zapier.com
+  - DOMAIN-KEYWORD,zapier
+  - DOMAIN-SUFFIX,make.com
+  - DOMAIN-SUFFIX,integromat.com
+  - DOMAIN-SUFFIX,airtable.com
+  - DOMAIN-SUFFIX,notion.so
+  - DOMAIN-KEYWORD,notion
+  - DOMAIN-SUFFIX,asana.com
+  - DOMAIN-SUFFIX,trello.com
+  - DOMAIN-SUFFIX,monday.com
+  
+  # CRM & 客服工具
+  - DOMAIN-SUFFIX,zendesk.com
+  - DOMAIN-SUFFIX,intercom.com
+  - DOMAIN-KEYWORD,intercom
+  - DOMAIN-SUFFIX,freshdesk.com
+  - DOMAIN-SUFFIX,crisp.chat
+  - DOMAIN-SUFFIX,tidio.com
+  - DOMAIN-SUFFIX,gorgias.com
 
-  # ===== 物流后台 =====
-  - DOMAIN-SUFFIX,shipstation.com
-  - DOMAIN-KEYWORD,shipstation
+  # ===== 物流 & 海外仓平台 =====
+  # 物流追踪
   - DOMAIN-SUFFIX,17track.net
   - DOMAIN-KEYWORD,17track
+  - DOMAIN-SUFFIX,aftership.com
+  - DOMAIN-SUFFIX,trackingmore.com
+  - DOMAIN-SUFFIX,packagetrackr.com
+  
+  # 物流管理平台
+  - DOMAIN-SUFFIX,shipstation.com
+  - DOMAIN-KEYWORD,shipstation
   - DOMAIN-SUFFIX,easypost.com
+  - DOMAIN-SUFFIX,shippo.com
+  - DOMAIN-SUFFIX,pirateship.com
+  - DOMAIN-SUFFIX,stamps.com
+  
+  # 快递公司
   - DOMAIN-SUFFIX,usps.com
   - DOMAIN-SUFFIX,ups.com
   - DOMAIN-SUFFIX,fedex.com
+  - DOMAIN-SUFFIX,dhl.com
+  - DOMAIN-SUFFIX,dhl.de
+  - DOMAIN-KEYWORD,dhl
+  
+  # 海外仓 & 3PL
+  - DOMAIN-SUFFIX,shipbob.com
+  - DOMAIN-SUFFIX,shiphero.com
+  - DOMAIN-SUFFIX,fulfillment.com
+  - DOMAIN-SUFFIX,flexport.com
+  - DOMAIN-SUFFIX,rakuten.com
+  - DOMAIN-SUFFIX,amazonlogistics.com
+  
+  # 中国物流
+  - DOMAIN-SUFFIX,sf-express.com
+  - DOMAIN-KEYWORD,sf-express
+  - DOMAIN-SUFFIX,sto.cn
+  - DOMAIN-SUFFIX,yto.net.cn
+  - DOMAIN-SUFFIX,zto.com
+  - DOMAIN-SUFFIX,yd.cn.com
